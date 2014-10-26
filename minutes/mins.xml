@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+START STAGE 2
+NOTE: if attendees is not explicitly stated, all three members attended the meeting
+[CSE116-T<B2t>] Minutes from meeting on <04-11-2012>
+Time- 
+	-LAB 10:30-11:50 AM
+What we did-
+	-Started Stage 2
+	-updated repository for stage 2 project folder
+	-started looking at tiles in photoeditor (50x50px tiles, 650x650px board)
+	-planned big benchmark steps we need to complete:
+		-Fix place method to scale up
+		-fix score method
+		-full development of TUI
+		-design of GUI
+		-implement GUI on top of TUI
+Plans-
+	-Start on list
+Next Meeting-
+	- 5 PM 4/12/12
+	
+[CSE116-T<B2t>] Minutes from meeting on <04-12-2012>
+Time- 
+	-5PM - 7PM
+Attendees-
+	-Sean Rosney, Stephen Keller, and Robert Schaumloeffel	
+What we did-
+	-Refactored Place method - now its own method - severely shortened code
+	-Expanded board to 12x12
+	-fixed border to look like small one but bigger
+	-fixed a lot of numbers for bigger board
+	-created 6 tiles in photoshop
+Plans-
+	-Bob work on all the tiles
+	-work on scoring and legality scale up
+	-think about players update
+	-save implementation?
+	-make the new tiles in string form in collection
+Next Meeting-
+	-10AM on 4/13/12
+	
+[CSE116-T<B2t>] Minutes from meeting on <04-13-2012>
+Time- 
+	-10AM - 11AM
+Attendees-
+	-Stephen Keller, and Robert Schaumloeffel	
+What we did-
+	-created all tiles in text
+	-finished all the gui tiles pngs
+	-started board gui pngs
+	-put middle on tui board
+Plans-
+	-work on scoring and legality scale up
+	-think about players update
+	-save implementation?
+Next Meeting-
+	-10AM on 4/16/12
+	
+[CSE116-T<B2t>] Minutes from meeting on <04-18-2012>
+Time- 
+	-LAB 11AM - 11:50AM
+Attendees-
+	-Sean Rosney, Stephen Keller, and Robert Schaumloeffel	
+What we did-
+	-went over what we did( gui board and tiles)
+
+Plans-
+	-work on scoring and LEGALITY scale up
+	-think about players update
+	-save implementation?
+Next Meeting-
+	-4PM on 4/19/12		
+	
+	
+[CSE116-T<B2t>] Minutes from meeting on <04-19-2012>
+Time- 
+	-3:30PM - 7:15PM
+Attendees-
+	-Sean Rosney, Stephen Keller, and Robert Schaumloeffel	
+What we did-
+	-went over what we Sean accomplished (legality of placement, "direction out" scale up)
+	-worked on scale up of display player and resign and gameover
+	-finished gui boards
+	-planned out gui sequence of windows
+
+Plans-
+	-work on gui
+	-fix score calculator
+	-think about players update
+	-save implementation?
+Next Meeting-
+	-10AM on 4/20/12	
+	
+[CSE116-T<B2t>] Minutes from meeting on <04-20-2012>
+Time- 
+	-10AM - 11:40AM
+Attendees-
+	-Stephen Keller and Robert Schaumloeffel	
+What we did-
+	-fixed scoring .equals
+	-updated scannerman to take in int and display tui board accordingly
+	-finished all the gui board pngs and in folder
+	-Worked on startinf inputs
+Plans-
+	-SCORING SCALE UP BASED ON NUMBER OF PLAYERS
+	-think about players update
+	-save implementation?
+Next Meeting-
+	-10AM on 4/23/12		
+	
+[CSE116-T<B2t>] Minutes from meeting on <04-25-2012>
+Time- 
+	-LAB 11AM - 11:50AM
+Attendees-
+	-Sean Rosney, Stephen Keller, and Robert Schaumloeffel	
+What we did-
+	-went over what we did(gui as jlabels)
+Plans-
+	-set up mechanics of gui
+	-save implementation
+Next Meeting-
+	-4PM on 4/26/12			
+	
+[CSE116-T<B2t>] Minutes from meeting on <04-26-2012>
+Time- 
+	-5PM - 8PM
+Attendees-
+	-Sean Rosney, Stephen Keller, and Robert Schaumloeffel	
+What we did-
+	-Went over gui set up fix
+	-set up Save and load methods
+	-started Gui implementation
+Plans-
+	-fix load
+	-GUI finish(actionlisteners)
+Next Meeting-
+	-10AM on 4/27/12		
+	
+[CSE116-T<B2t>] Minutes from meeting on <04-27-2012>
+Time- 
+	-4:30PM - 7:30PM
+Attendees-
+	-Stephen Keller, and Robert Schaumloeffel	
+What we did-
+	-set up Save and load methods
+	-GUI place finish
+Plans-
+	-GUI finish(actionlisteners)
+Next Meeting-
+	-10AM on 4/30/12		
+	
+[CSE116-T<B2t>] Minutes from meeting on <04-30-2012>
+Time- 
+	-4PM - 9PM
+Attendees-
+	-Sean Rosney, Stephen Keller, and Robert Schaumloeffel	
+What we did-
+	-Fixed tests
+	-commented
+	-Gui place and remove
+	-SUBMITTED AT: 2045
+Plans-
+	-WE DONE
+	

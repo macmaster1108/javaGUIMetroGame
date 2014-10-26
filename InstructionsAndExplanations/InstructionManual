@@ -1,0 +1,239 @@
+BRIEF INSTRUCTIONS:
+
+Welcome to Metro!
+When you start the game by running the Driver class, you will be prompted to enter you selection of GUI or TUI in the console, 
+then to enter the desired number of players, followed by each player's name individually, and finally, if a saved game exists 
+based on the player names you entered, whether you want to load a saved game or start a new one.  At the start of the game, you 
+will see the current scores of each player, which player's turn it is, the tile the current player has drawn, and the current 
+board.
+
+There are 8 commands that are typed into the console to play the game.
+ place(x,y)
+ remove
+ commit
+ resign
+ display score
+ display player
+ display tile
+ display board
+ save
+
+The goal of the game is to make the longest tracks possible.  At the start of your turn, you place your tile on the 12x12 board
+using "place(x,y)", replacing x and y with the desired coordinates of your placement, with x increasing from 1 in the far left 
+column to 12 in the far right column and y increasing from 1 in the top row to 12 in the bottom row.  You cannot place tiles on
+the center station area (locations (6,6),(6,7),(7,6), or (7,7)).  A track is complete when it starts from an Outgoing station and
+ends at an Incoming station.  Score points are awarded when a track is completed, with one point for each tile the track covers 
+before returning to an Incoming station.  This includes tiles that are crossed more than once.  If a track ends at a center 
+Incoming station, the player whose Outgoing station starts the track will get double the amount of points that track is worth. 
+(for instance, if the track length is 5 tiles and it ends at an Incoming center station, the track is worth 10 points to the 
+player whose outgoing station starts it) Outgoing stations of each player are are represented by the letters A, B, C,...,H, with 
+A corresponding to Player 1's stations, B corresponding to Player 2's stations, and so on.  Incoming stations are represented by 
+the arrows ^,>,v,<.  The Center station has four unowned Outgoing stations, represented by #. (Note, in games of 5 and 7 players, 
+there will be unowned Outgoing stations along the left border, represented by #)  The numbers on the tiles represent how the tile 
+tracks connect (1 connects to 1, 2 connects to 2,...).  
+You may not place tiles in locations that create complete tracks of only one tile length.  This means if you have a tile with a 
+track connection on one side (a tile with 11 in the top row) you cannot place this tile in a border location.  However, if no 
+other moves are available, this move is allowed and the respective player who's outgoing station connects to an incoming one will 
+get 1 point.  Use the "remove" command to remove a placed tile on the board. If the tile is in an illegal location, you will be 
+forced to remove it before continuing game play. When you are satisfied with your tile placement, type the "commit" command to end 
+your turn and calculate the current score based on any completed tracks on the board.  If a player uses the "resign" command, 
+their score is set to zero, the game ends, and the other player(s) win(s), even if the other player(s) also have a score of zero 
+as well.  When the last of the 140 tiles is placed and committed, the game automatically ends and the winner, the player with the 
+highest score, or a draw, is declared.  To display the current player scores, who's turn it is, which tile the current player 
+must place, and the current board configuration, type the following respective commands: "display score", "display player", 
+"display tile", "display board".  To save a game, simply type the command: "save".  This will save your current game.  To load the
+game later on, just enter the same player names as were playing in your saved game when asked and then select the "1. Game" file
+when prompted.  If you are using the GUI panel, these methods may be called in a similar manner by clicking on the respective
+buttons and entering the applicable information, if prompted to do so.
+Good luck and have fun!
+
+
+----------------------------------------------------------------------------------------------------------------------------------
+FULL INSTRUCTIONS:
+
+
+Let's take a ride on the METRO!
+
+Number of Players: 2-8
+
+Hello there, and welcome to the wonderful world of Metro!
+The Parisian Transport Construction team is busy building a new, state-of-the-art train system, 
+and we're glad you've decided to be a part of it!
+Let's get this train on its tracks!
+ALL ABOARD!
+
+
+
+GAME COMPONENTS:
+	
+	Game board:
+	The Game board is laid out in the following manner:
+	
+
+  A^  B^  A^  B^  A^  B^  A^  B^  A^  B^  A^  B^  
+                                                  
+<                                                A
+B                                                >
+                                                  
+                                                  
+<                                                B
+A                                                >
+                                                  
+                                                  
+<                                                A
+B                                                >
+                                                  
+                                                  
+<                                                B
+A                                                >
+                                                  
+                                                  
+<                                                A
+B                                                >
+                                                  
+                      v#  v#                      
+<                    #      <                    B
+A                    >      #                    >
+                                                  
+                                                  
+<                    #      <                    A
+B                    >      #                    >
+                      #^  #^                      
+                                                  
+<                                                B
+A                                                >
+                                                  
+                                                  
+<                                                A
+B                                                >
+                                                  
+                                                  
+<                                                B
+A                                                >
+                                                  
+                                                  
+<                                                A
+B                                                >
+                                                  
+                                                  
+<                                                B
+A                                                >
+                                                  
+  vB  vA  vB  vA  vB  vA  vB  vA  vB  vA  vB  vA  
+	
+	
+	The Letters A through H represent players' outgoing stations.  A corresponds to Player 1's Outgoing stations, 
+	B corresponds to Player 2's, and so on.  The # symbols represent unowned Outgoing stations.  If you are playing with 
+	5 or 7 players, some of the Outgoing stations along the left border will be unowned and represented with a #.
+	Incoming stations are represented by the arrows ^,>,v,<.
+	
+	Tiles:
+	This game has 6 of each of 24 different tiles (144 Total). (However, since the board only contains 140 spaces, 4 tiles 
+	will not be played each game.)  They are presented as:
+	
+	 31     32     34     33   
+	2  2   3  2   1  2   4  2
+	4  4   4  1   4  3   4  2
+	 31  ,  41  ,  21  ,  11  , ...
+	
+	These tiles represent the tracks you are building.  Each tile holds four sections of track.  The numbers represent
+	where the tracks connect (1 to 1, 2 to 2,...) and the side they are on represents the direction they point
+	(top numbers connect upwards, numbers on the left column lead to the left...).  The tiles are shuffled before each
+	new game and the current player draws one tile  for placing on the board at the start of their turn.
+	
+PLAYING THE GAME:
+
+		To start a new game, run the driver class of the project.
+		You will be prompted to enter the following information:
+		-Whether you want to play GUI or TUI
+		-The Number of Players
+		-Each player's name
+		-If you have a saved game with the same player names as you currently entered, you will have the option
+			of loading that game or starting a new one.
+			
+		At the start of the game you will see:	
+		-Each player's current score
+		-Who's turn it is
+		-the tile the current player must place
+		-The empty board
+		
+		The game is played by typing commands into the console. You must type these commands exactly as you see
+		them listed here.  If you selected GUI, the commands can be carried out in a similar manner by clicking on the 
+		respective buttons and entering the applicable information, if prompted to do so.
+		
+			place(x,y)
+			
+				This command places your tile on the board, so long as there is no tile already there and you have
+				not already placed your tile during your turn.
+				Tiles are placed in a 12 x 12 grid, laid out as:
+			
+				  x-> 
+				y    (1,1)  (2,1)  (3,1)  (4,1) ... (12,1)
+				|                                 
+				V    (1,2)  (2,2)  (3,2)  (4,2)
+				
+				     (1,3)  (2,3)  (3,3)  (4,3)
+				
+				     (1,4)  (2,4)  (3,4)  (4,4)
+				     
+				     ...                        ...
+				     
+				     (1,12)                         (12,12)
+				
+				Place your tile by typing "place(x,y)" replacing x and y with the coordinates you desire.
+				If you place a tile in an illegal spot, you will be told this, but your tile will temporarily be added
+				to the board. You must use the remove command to withdraw your tile so it can be placed somewhere else.
+				
+			remove
+				
+				If you have placed a tile and want to change its location or you placed it in an illegal position
+				you can remove it from the board using this command.
+					
+			commit
+				
+				If you are happy with your tile placement and your play is legal, type this command to finalize it.
+				This ends your turn, along with a display of the current game statistics.
+				If you place the last tile on the board, the game will end and the winner will be announced.
+				
+			resign
+				
+				When this command is typed, the current player resigns from the game.
+				
+			display score
+			
+				Displays the current scores of each player's tracks that have already been committed.
+				
+			display player
+			
+				Displays which player's turn it is currently.
+				
+			display tile
+			
+				Displays the current player's tile.
+				
+			display board
+			
+				Displays the current board, including tiles that may have been placed illegally and need to be removed.		
+			
+RULES:			
+		
+		Tiles must be placed in locations that will not make tracks of only one tile length, unless no other placement
+		will allow otherwise.  This means you cannot place a tile that connects an outgoing station to an incoming station,
+		regardless of which player owns each station, unless you cannot place the tile anywhere else on the board.  When an
+		illegal tile placement is made, the player will be notified of this an they will have to call the remove command to 
+		withdraw their tile from the board.  Tiles also cannot be placed where a tile already exists on the board and 
+		players cannot place a tile twice in their turn without first removing it.  Players will be told when they attempt
+		to do so.
+		
+		Scores are calculated and added to each player's running total when a track that starts from one of their outgoing stations
+		is completed by ending at an incoming station.  One point is awarded for each tile the track traverses before returning
+		to another station, including tiles that are crossed more than once.  Tracks that end in center incoming stations are worth
+		double the points.
+		
+		The game ends when all 140 tiles have been placed on the board.  The player who has the greatest total of track
+		lengths is the winner.  If multiple players have an equal score, a draw is declared.
+		
+		At any time, the current player may resign during their turn.  This means the resigning player automatically
+		receives a score of zero, and the other player(s) win(s), even if the other player(s) have a score of zero as well.
+		
+Good luck constructing Paris' best railway transportation system ever! HAVE FUN!		
